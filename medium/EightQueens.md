@@ -75,3 +75,7 @@ So:
 IF next_queen HAS same_difference as this_queen AND next_queen.x is < || > than this_queen.x
 IF next_queen HAS same_x
 IF next_queen HAS same_y
+
+#### Conclusion
+
+By making all a generic moveByPath and having all the direction paths stored in an array, you cut down on alot of repitition. This has the slight overhead of calculating x or y when the direction is zero, but that is more than compensated by the reduced code.
